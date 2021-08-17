@@ -1,0 +1,87 @@
+/* start of vars */
+:root {
+    --bg1:hsl(31, 77%, 52%);
+    --bg2:hsl(184, 100%, 22%);
+    --bg3: hsl(179, 100%, 13%);
+    --p-color:hsla(0, 0%, 100%, 0.75);
+    --accent: hsl(0, 0%, 95%);
+}
+/* end of vars */
+/* start of global rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    background-color: var(--accent);
+}
+/* end of global rules  */
+/* start of container */
+.container {
+    max-width: 80%;
+    margin: 80px auto;
+    /* display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container > div {
+    max-width: calc(100% / 3);
+    min-width: 330px;
+    padding: 50px;
+    height: 500px;
+    color: var(--p-color);
+    line-height: 1.8;
+    position: relative;
+}
+.container > div > * {
+    padding-top: 15px;
+}
+.container div h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: var(--accent);
+}
+.container div button {
+    border: 2px solid var(--accent);
+    background-color: var(--accent);
+    padding: 10px 25px;
+    margin-top: 100px;
+    border-radius: 21px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+}
+.container div button:hover {
+    background-color: transparent;
+    color: var(--accent);
+}
+.container .sedans {
+    background-color: var(--bg1);
+}
+.container .sedans button {
+    color: var(--bg1);
+}
+.container .suvs {
+    background-color: var(--bg2);
+}
+.container .suvs button {
+    color: var(--bg2);
+}
+.container .luxury {
+    background-color: var(--bg3);
+}
+.container .luxury button {
+    color: var(--bg3);
+}
+/* end of container */
