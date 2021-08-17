@@ -24,18 +24,14 @@ body{
 /* end of global rules  */
 /* start of container */
 .container {
-    max-width: 80%;
+    width: 80%;
     margin: 80px auto;
-    /* display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr)); */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     border-radius: 20px;
     overflow: hidden;
 }
 .container > div {
-    max-width: calc(100% / 3);
-    min-width: 330px;
     padding: 50px;
     height: 500px;
     color: var(--p-color);
